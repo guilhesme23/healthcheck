@@ -38,7 +38,7 @@ def hehe():
 
 health.add_check(test_db_connection)
 health.add_check(test_sum)
-health.add_check(hehe)
+#health.add_check(hehe)
 
 if __name__ == "__main__":
   # test_db_connection()

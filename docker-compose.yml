@@ -13,6 +13,6 @@ services:
     ports:
       - 5000:5000
     environment:
-      DB_URL: "postgres://admin:admin@db:5432/admin" 
+      DB_URL: "postgres://lyrbmowb:FaRSSpal8GKObrKFpd9cyO5AAhCnpvlz@tuffi.db.elephantsql.com:5432/lyrbmowb" 
     depends_on:
       - db
