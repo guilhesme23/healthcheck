@@ -35,7 +35,7 @@ spec:
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           env:
             - name: DB_URL
-              value: "postgres://lyrbmowb:FaRSSpal8GKObrKFpd9cyO5AAhCnpvlz@tuffi.db.elephantsql.com:5432/lyrbmowb"
+              value: "postgres://admin:admin@192.168.0.80:5434/admin"
           ports:
             - name: http
               containerPort: 5000
@@ -44,6 +44,8 @@ spec:
             httpGet:
               path: /healthcheck
               port: http
+            periodSeconds: 5
+            initialDelaySeconds: 5
           readinessProbe:
             httpGet:
               path: /healthcheck
