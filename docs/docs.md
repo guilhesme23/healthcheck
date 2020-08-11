@@ -57,4 +57,4 @@ if __name__ == "__main__":
 
 A classe espera que cada função de checagem retorne uma tupla contendo o resultado (True ou False) do teste e um output ou log sobre o resultado. Os resultados são apresentados em forma de json, com status 500 em caso de falha e status 200 caso haja sucesso.
 
-![resultado teste]('./resultado.png')
+![resultado teste](resultado.png)
